@@ -51,6 +51,9 @@ echo
 echo
 echo '[entity-name]'
 echo
+echo '# Burner Assembler'
+echo 'assembling-machine-0=Burner assembling machine'
+echo
 echo
 echo '[modifier-description]'
 echo 'character-build-distance=Character Build Distance'
@@ -84,6 +87,9 @@ echo
 echo
 echo '[mod-setting-name]'
 echo 'overmods-debug=Enable Debug Mode'
+echo
+echo '# Burner Assembler'
+echo 'overmods-enable-burner-assembler=Enable Burner Assembler Recipe (Default: true)'
 echo
 echo "# Modifier Researches"
 for m in ${researches}; do
