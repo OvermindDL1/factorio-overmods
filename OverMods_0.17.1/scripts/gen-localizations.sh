@@ -33,6 +33,7 @@ zoom-to-world-selection-tool-enabled
 worker-robot-battery
 laboratory-productivity
 follower-robot-lifetime
+artillery-range
 '
 
 research_tier_names='
