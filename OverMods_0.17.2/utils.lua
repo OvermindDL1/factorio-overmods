@@ -53,8 +53,12 @@ end
 
 function table:filter(filterIter)
   local new_array = {}
+  local idx = 1
   for k, v in pairs(self) do
-    if filterIter(v, k, self) then new_array[k] = v end
+    if filterIter(v, k, self) then
+      new_array[idx] = v
+      idx = idx + 1
+    end
   end
   return new_array
 end
