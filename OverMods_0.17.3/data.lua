@@ -1,7 +1,7 @@
 overmods = overmods or {}
 
 consts = require("consts")
-utils = require("utils")
+om_utils = require("om_utils")
 
 
 require("data-settings")

@@ -15,7 +15,7 @@ function map_inputs(s)
 end
 
 function filter_inputs(t)
-  return utils.tool_exists(t[1])
+  return om_utils.tool_exists(t[1])
 end
 
 
@@ -42,7 +42,7 @@ for m, m_defaults in pairs(consts.simple_modifiers) do
         else return r
       end
     end)
-    prereqs = table.filter(prereqs, utils.technology_exists)
+    prereqs = table.filter(prereqs, om_utils.technology_exists)
 
     if count == 0 or cost_inputs == "" or cost_count == "" or not (cost_time > 0) then
       if overmods.debug then log("Skipping modifier research: " .. m .. "-" .. t) end
